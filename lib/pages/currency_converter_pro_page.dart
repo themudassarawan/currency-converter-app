@@ -659,12 +659,20 @@ class _CurrencyConverterProPageState extends State<CurrencyConverterProPage>
     required bool isInput,
     required VoidCallback onPickerTap,
   }) {
+    final bgColor = isInput ? const Color(0xFF0D121D) : const Color(0xFF090E16);
+    final borderColor = isInput ? const Color(0xFF1E293F) : const Color(0xFF1A2538);
+    final tagBg = isInput ? const Color(0xFF182236) : const Color(0xFF142428);
+    final tagBorder = isInput ? const Color(0xFF263756) : const Color(0xFF203D40);
+    final tagColor = isInput ? const Color(0xFFCBD5E1) : const Color(0xFF6EE7B7);
+    final btnBg = isInput ? const Color(0xFF141C2B) : const Color(0xFF121E2C);
+    final btnBorder = isInput ? const Color(0xFF2B3D5E) : const Color(0xFF243B57);
+
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: const Color(0xFF0F172A),
+        color: bgColor,
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: const Color(0xFF1E293B)),
+        border: Border.all(color: borderColor),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -672,13 +680,21 @@ class _CurrencyConverterProPageState extends State<CurrencyConverterProPage>
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                label,
-                style: const TextStyle(
-                  color: Color(0xFF64748B),
-                  fontSize: 11,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 0.8,
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  color: tagBg,
+                  borderRadius: BorderRadius.circular(6),
+                  border: Border.all(color: tagBorder),
+                ),
+                child: Text(
+                  label,
+                  style: TextStyle(
+                    color: tagColor,
+                    fontSize: 10,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 0.8,
+                  ),
                 ),
               ),
               Flexible(
@@ -686,7 +702,7 @@ class _CurrencyConverterProPageState extends State<CurrencyConverterProPage>
                   currency.name,
                   overflow: TextOverflow.ellipsis,
                   style: const TextStyle(
-                    color: Color(0xFF64748B),
+                    color: Color(0xFF94A3B8),
                     fontSize: 11,
                     fontWeight: FontWeight.w500,
                   ),
@@ -702,13 +718,13 @@ class _CurrencyConverterProPageState extends State<CurrencyConverterProPage>
                 borderRadius: BorderRadius.circular(12),
                 child: Container(
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 8,
+                    horizontal: 14,
+                    vertical: 10,
                   ),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF1E293B),
+                    color: btnBg,
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: const Color(0xFF334155)),
+                    border: Border.all(color: btnBorder),
                   ),
                   child: Row(
                     children: [
@@ -720,7 +736,7 @@ class _CurrencyConverterProPageState extends State<CurrencyConverterProPage>
                           fontWeight: FontWeight.w700,
                         ),
                       ),
-                      const SizedBox(width: 4),
+                      const SizedBox(width: 6),
                       const Icon(
                         Icons.keyboard_arrow_down_rounded,
                         color: Color(0xFF94A3B8),
