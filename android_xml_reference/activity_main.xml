@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  ANDROID XML REFERENCE FOR YOUR LECTURE
+  Compare this with: lib/pages/currency_converter_material_page.dart
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F4F6F9"
+    tools:context=".MainActivity">
+
+    <!-- RESULT TEXTVIEW (Equivalent to Flutter Text('$result')) -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PKR 0.00"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:layout_marginBottom="32dp" />
+
+    <!-- INPUT EDITTEXT (Equivalent to Flutter TextField()) -->
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount in USD"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- CONVERT BUTTON (Equivalent to Flutter ElevatedButton()) -->
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERT"
+        android:backgroundTint="#1E88E5"
+        android:textColor="#FFFFFF"
+        android:padding="14dp" />
+
+</LinearLayout>
