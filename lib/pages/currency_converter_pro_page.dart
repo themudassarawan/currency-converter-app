@@ -659,13 +659,13 @@ class _CurrencyConverterProPageState extends State<CurrencyConverterProPage>
     required bool isInput,
     required VoidCallback onPickerTap,
   }) {
-    final bgColor = isInput ? const Color(0xFF131B2E) : const Color(0xFF102022);
-    final borderColor = isInput ? const Color(0xFF23334E) : const Color(0xFF1E3B3E);
-    final tagBg = isInput ? const Color(0xFF1D2B44) : const Color(0xFF183438);
-    final tagBorder = isInput ? const Color(0xFF31476D) : const Color(0xFF275358);
-    final tagColor = isInput ? const Color(0xFFE2E8F0) : const Color(0xFF6EE7B7);
-    final btnBg = isInput ? const Color(0xFF1A263D) : const Color(0xFF173034);
-    final btnBorder = isInput ? const Color(0xFF2F4468) : const Color(0xFF274F54);
+    final bgColor = isInput ? const Color(0xFF162544) : const Color(0xFF10302B);
+    final borderColor = isInput ? const Color(0xFF2A4476) : const Color(0xFF1E544B);
+    final tagBg = isInput ? const Color(0xFF213763) : const Color(0xFF194941);
+    final tagBorder = isInput ? const Color(0xFF385B9E) : const Color(0xFF287367);
+    final tagColor = isInput ? const Color(0xFFE0E7FF) : const Color(0xFFA7F3D0);
+    final btnBg = isInput ? const Color(0xFF1F335C) : const Color(0xFF17433C);
+    final btnBorder = isInput ? const Color(0xFF3C61A3) : const Color(0xFF2B776A);
 
     return Container(
       padding: const EdgeInsets.all(16),

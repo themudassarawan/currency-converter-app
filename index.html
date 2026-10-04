@@ -240,29 +240,29 @@
           </div>
         </div>
 
-        <!-- FROM BOX (Full Card with Distinct Elevated Slate Navy Background) -->
-        <div class="rounded-2xl p-4 bg-[#131B2E] border border-[#23334E] shadow-md transition-colors">
+        <!-- FROM BOX (Vibrant Deep Sapphire / Navy) -->
+        <div class="rounded-2xl p-4 bg-gradient-to-br from-[#162544] to-[#111D36] border border-[#2A4476] shadow-lg transition-all">
           <div class="flex items-center justify-between mb-3">
-            <span class="px-2.5 py-1 rounded-md bg-[#1D2B44] border border-[#31476D] text-[10px] font-bold text-slate-200 uppercase tracking-wider">From</span>
-            <span id="fromCurrencyDesc" class="text-[11px] text-slate-300 font-medium">US Dollar</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#213763] border border-[#385B9E] text-[10px] font-bold text-indigo-100 uppercase tracking-wider">From</span>
+            <span id="fromCurrencyDesc" class="text-[11px] text-indigo-200 font-medium">US Dollar</span>
           </div>
 
           <div class="flex items-center justify-between gap-3">
-            <button id="openFromPicker" class="pill-btn flex items-center space-x-2.5 bg-[#1A263D] hover:bg-[#233352] border border-[#2F4468] rounded-xl px-3.5 py-2.5 text-left shrink-0 shadow-sm">
+            <button id="openFromPicker" class="pill-btn flex items-center space-x-2.5 bg-[#1F335C] hover:bg-[#273F70] border border-[#3C61A3] rounded-xl px-3.5 py-2.5 text-left shrink-0 shadow-md">
               <span id="fromCode" class="text-sm font-bold text-white tracking-wide">USD</span>
-              <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-3.5 h-3.5 text-indigo-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
 
             <div class="flex-1 flex items-center justify-end">
-              <span id="fromSymbol" class="text-lg font-medium text-slate-400 mr-1.5">$</span>
+              <span id="fromSymbol" class="text-lg font-bold text-indigo-300 mr-1.5">$</span>
               <input 
                 type="text" 
                 id="amountInput" 
                 value="1,000" 
                 inputmode="decimal"
-                class="w-full bg-transparent text-right text-2xl font-bold text-white tracking-tight outline-none tabular placeholder-slate-500"
+                class="w-full bg-transparent text-right text-2xl font-bold text-white tracking-tight outline-none tabular placeholder-indigo-300/40"
                 placeholder="0"
               />
             </div>
@@ -272,32 +272,32 @@
         <!-- SWAP DIVIDER -->
         <div class="relative flex items-center justify-center my-[-6px] z-10">
           <div class="absolute inset-0 flex items-center">
-            <div class="w-full border-t border-[#1F2C42]"></div>
+            <div class="w-full border-t border-[#233550]"></div>
           </div>
-          <button id="swapCurrenciesBtn" title="Swap Currencies" class="pill-btn relative z-20 w-8 h-8 rounded-full bg-[#1C283E] border border-[#32476D] text-slate-200 hover:text-white hover:bg-slate-700 flex items-center justify-center shadow-lg transition-colors">
+          <button id="swapCurrenciesBtn" title="Swap Currencies" class="pill-btn relative z-20 w-8 h-8 rounded-full bg-[#1C2C48] border border-[#354F7A] text-slate-100 hover:text-white hover:bg-slate-700 flex items-center justify-center shadow-xl transition-transform hover:scale-105">
             <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
             </svg>
           </button>
         </div>
 
-        <!-- TO BOX (Full Card with Distinct Elevated Dark Emerald / Payout Background) -->
-        <div class="rounded-2xl p-4 bg-[#102022] border border-[#1E3B3E] shadow-md transition-colors">
+        <!-- TO BOX (Vibrant Jade / Emerald Payout) -->
+        <div class="rounded-2xl p-4 bg-gradient-to-br from-[#10302B] to-[#0A201C] border border-[#1E544B] shadow-lg transition-all">
           <div class="flex items-center justify-between mb-3">
-            <span class="px-2.5 py-1 rounded-md bg-[#183438] border border-[#275358] text-[10px] font-bold text-emerald-300 uppercase tracking-wider">To</span>
-            <span id="toCurrencyDesc" class="text-[11px] text-slate-300 font-medium">Pakistani Rupee</span>
+            <span class="px-2.5 py-1 rounded-md bg-[#194941] border border-[#287367] text-[10px] font-bold text-emerald-200 uppercase tracking-wider">To</span>
+            <span id="toCurrencyDesc" class="text-[11px] text-emerald-200 font-medium">Pakistani Rupee</span>
           </div>
 
           <div class="flex items-center justify-between gap-3">
-            <button id="openToPicker" class="pill-btn flex items-center space-x-2.5 bg-[#173034] hover:bg-[#1E3E43] border border-[#274F54] rounded-xl px-3.5 py-2.5 text-left shrink-0 shadow-sm">
+            <button id="openToPicker" class="pill-btn flex items-center space-x-2.5 bg-[#17433C] hover:bg-[#1E544A] border border-[#2B776A] rounded-xl px-3.5 py-2.5 text-left shrink-0 shadow-md">
               <span id="toCode" class="text-sm font-bold text-white tracking-wide">PKR</span>
-              <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-3.5 h-3.5 text-emerald-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </button>
 
             <div class="flex-1 flex items-center justify-end overflow-hidden">
-              <span id="toSymbol" class="text-lg font-medium text-slate-400 mr-1.5">Rs</span>
+              <span id="toSymbol" class="text-lg font-bold text-emerald-400 mr-1.5">Rs</span>
               <div id="convertedResult" class="text-2xl font-bold text-white tracking-tight tabular truncate">
                 278,500.00
               </div>
